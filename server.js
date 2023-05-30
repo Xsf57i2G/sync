@@ -39,4 +39,4 @@ const handler = (req) => {
 	}
 }
 
-serve(handler, { port: 8080 })
+serve(handler, { port: 8000 })

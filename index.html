@@ -3,6 +3,11 @@
 <body>
 	<script src="client.js" defer></script>
 	<video controls="true" src="flower.webm"></video>
+	<dialog id="dialog">
+		<p>Join room?</p>
+		<button id="yes" onclick="dialog.close()">Yes</button>
+		<button id="no" onclick="dialog.close()">No</button>
+	</dialog>
 </body>
 
 </html>

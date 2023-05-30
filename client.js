@@ -1,9 +1,14 @@
-const socket = new WebSocket('ws://localhost:8080')
+const socket = new WebSocket('ws://localhost:8000')
 const video = document.querySelector('video')
+const dialog = document.querySelector('dialog')
 
 const state = {
 	paused: video.paused,
 	time: video.currentTime,
+}
+
+window.onload = () => {
+	dialog.showModal()
 }
 
 video.onpause = () => {
